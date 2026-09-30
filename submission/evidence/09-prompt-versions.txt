@@ -1,0 +1,16 @@
+Prompt versions - day13-chat (nguon: Langfuse API /api/public/v2/prompts)
+--- v1 | labels=['production', 'baseline'] | commit='v1 baseline' | type=text
+Feature={{feature}}
+Docs={{docs}}
+Question={{message}}
+
+--- v2 | labels=['candidate', 'latest'] | commit='v2 candidate' | type=text
+Feature={{feature}}
+Docs={{docs}}
+Question={{message}}
+Feature={{feature}}
+Docs={{docs}}
+Question={{message}}
+
+Please provide a concise and helpful response.
+

@@ -1,0 +1,5 @@
+# 2 dong log (request_received, response_sent) cua request req-49274868 trong data/logs.jsonl: co correlation_id + metadata
+{"service": "api", "payload": {"message_preview": "What is your refund policy? My email is [REDACTED_EMAIL]"}, "event": "request_received", "user_id_hash": "2055254ee30a", "session_id": "s01", "model": "claude-sonnet-4-5", "env": "dev", "feature": "qa", "correlation_id": "req-49274868", "level": "info", "ts": "2026-09-30T04:12:46.436728Z"}
+{"service": "api", "latency_ms": 151, "ttft_ms": 50, "tokens_in": 36, "tokens_out": 90, "cost_usd": 0.001458, "quality_score": 0.9, "tool_name": "retrieval", "tool_success": true, "payload": {"answer_preview": "Starter answer. You should improve this output logic and add better quality chec..."}, "event": "response_sent", "user_id_hash": "2055254ee30a", "session_id": "s01", "model": "claude-sonnet-4-5", "env": "dev", "feature": "qa", "correlation_id": "req-49274868", "level": "info", "ts": "2026-09-30T04:12:46.589404Z"}
+
+# header response cua API: x-request-id dung format req-<8 hex> (xem 05-pii-redaction.txt)

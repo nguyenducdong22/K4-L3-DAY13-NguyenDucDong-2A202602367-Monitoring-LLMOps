@@ -1,0 +1,15 @@
+Langfuse project (EU cloud.langfuse.com) - trace cung correlation_id=req-a6efe8e3
+Trace ID: f513abc5687f94e48870fad98ce1b338   start 2026-09-30T04:12:55.896Z   prompt day13-chat v1 (langfuse)
+
+  lab-agent-run  AGENT      2.653s
+  |- retrieval   RETRIEVER  2.501s   <-- span gay cham
+  '- generation  GENERATION 0.152s
+
+Baseline (req-49274868, trace 2488fa7a7b31ed1233d3b3f555c6d32a): agent 0.152s, retrieval 0.000s, generation 0.151s
+
+5/5 trace challenge deu co retrieval=2.50s, generation=0.15s:
+  req-4149e099 849bac99f9b835703e533877d35e902e
+  req-a6efe8e3 f513abc5687f94e48870fad98ce1b338
+  req-6b0c1a21 733b70158e68b12e7d5bf22ecde84250
+  req-b0e6c4a9 095faff5019a4624703a2b2c41edbaf9
+  req-3c0e92b5 2cd0377c7adf92c12226fbc5ef10c817

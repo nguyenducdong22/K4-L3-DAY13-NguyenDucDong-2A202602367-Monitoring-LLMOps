@@ -1,0 +1,13 @@
+Prompt day13-chat - project Langfuse cua toi (EU). LANGFUSE_PROMPT_LABEL=production, restart API sau moi lan doi label (cache 60s).
+[0] TRUOC khi doi:
+   day13-chat v1 labels=['production', 'baseline'] (v1 baseline)
+   day13-chat v2 labels=['candidate', 'latest'] (v2 candidate)
+[1] PROMOTE: gan production -> v2
+   day13-chat v1 labels=['baseline'] (v1 baseline)
+   day13-chat v2 labels=['production', 'candidate', 'latest'] (v2 candidate)
+   request: correlation_id=req-4355bcea tokens_in=90
+[2] ROLLBACK: gan production -> v1
+   day13-chat v1 labels=['production', 'baseline'] (v1 baseline)
+   day13-chat v2 labels=['candidate', 'latest'] (v2 candidate)
+   request: correlation_id=req-337a196d tokens_in=39
+Ket qua cuoi: production -> v1 (tokens_in 39), v2 chi con candidate + latest

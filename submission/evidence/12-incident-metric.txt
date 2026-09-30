@@ -1,0 +1,11 @@
+Challenge: day13-k4-l3b-monitoring-llmops-v1 (cohort K4, incident=rag_slow, latency_threshold_ms=2000)
+Nguon: data/logs.jsonl, event=response_sent, truong latency_ms (UTC)
+Incident bat: 2026-09-30T04:12:52.709Z | Incident tat (fix): 2026-09-30T04:13:56.174Z
+
+Giai doan                          n   P50    P95    max   TTFT_p95  tokens_out_avg  cost_avg   quality  tool_success
+Baseline (truoc incident)          10  151ms  153ms  153   50ms      120             $0.00191   0.88     10/10
+Challenge (04:12:55-04:13:06)       5  2652ms 2653ms 2653  50ms      129             $0.00204   0.84     5/5
+Sau fix (04:13:56+)                 5  152ms  156ms  156   -         -               -          -        -
+
+Ket luan metric: latency tang ~17.5x (151ms -> 2652ms) va vuot nguong 2000ms; TTFT, token, cost, error khong doi
+=> trieu chung chi o latency, khong phai LLM/token/cost/loi.

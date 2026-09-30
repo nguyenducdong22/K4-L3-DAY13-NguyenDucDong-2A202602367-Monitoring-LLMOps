@@ -1,0 +1,7 @@
+== AGENT lab-agent-run | latency=2.653s | session=k4-l3b-challenge-s03 | user(hash)=189d0a182d4e
+   metadata={"correlation_id": "req-a6efe8e3", "model": "claude-sonnet-4-5", "feature": "monitoring", "prompt_fetch_error": "", "prompt_source": "langfuse", "prompt_version": 1, "prompt_label": "production", "prompt_name": "day13-chat", "query_preview": "Summarize the observability workflow for an AI API.", "doc_count": 1}
+== RETRIEVER retrieval | latency=2.501s | session=k4-l3b-challenge-s03 | user(hash)=189d0a182d4e
+   metadata={"correlation_id": "req-a6efe8e3", "model": "claude-sonnet-4-5", "feature": "monitoring"}
+== GENERATION generation | latency=0.152s | session=k4-l3b-challenge-s03 | user(hash)=189d0a182d4e
+   metadata={"correlation_id": "req-a6efe8e3", "feature": "monitoring", "output_tokens": 153, "input_tokens": 35, "cost_usd": 0.0024, "model": "claude-sonnet-4-5"}
+   model='claude-sonnet-4-5' usageDetails={'input': 35, 'output': 153, 'total': 188} costDetails={'total': 0.0024} promptName=day13-chat promptVersion=1
